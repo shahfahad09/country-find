@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Country Map</title>
+</head>
+<body>
+    <h1>Enter Country Name</h1>
+    <form method="POST">
+        <input type="text" name="country" required>
+        <input type="submit" value="Generate Map">
+    </form>
+    <div>{{ plot | safe }}</div>
+</body>
+</html>
